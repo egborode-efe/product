@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-greyish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--cream);
+
+  font-family: "Fraunces", serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  width: 90%;
+  max-width: 600px;
+  margin: 10px auto;
+  justify-content: start;
+  background-color: var(--white);
+  border-radius: 12px;
+}
+.inner-container1 img {
+  width: 100%;
+  padding-bottom: 0;
+  border-end-start-radius: 12px;
+  border-start-start-radius: 12px;
+  margin: 0;
+}
+.inner-container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+.inner-inner {
+  display: flex;
+  gap: 20px;
+}
+.inner-inner h2 {
+  color: var(--dark-cyan);
+}
+.inner-inner p {
+  text-decoration: line-through;
+  color: var(--dark-greyish-blue);
+}
+.inner-inner h2 {
+  font-size: 29px;
+}
+.inner-container2 button {
+  background-color: var(--dark-cyan);
+  padding: 14px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+  border: none;
+  color: var(--white);
+  font-weight: bolder;
+}
+p {
+  font-size: 14px;
+  color: var(--dark-greyish-blue);
+  font-family: "Montserrat", sans-serif;
+}
+.perf {
+  width: 90%;
+  max-width: 600px;
+}
+.inner-container2 {
+  padding: 20px;
+}
+@media (width< 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .inner-container2 {
+    gap: 20px;
+  }
+}
+.inner-container2 button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
